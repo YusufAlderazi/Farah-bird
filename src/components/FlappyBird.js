@@ -999,7 +999,7 @@ const FlappyBird = () => {
             <CharacterTitle>Choose Your Character</CharacterTitle>
             <CharacterGrid>
               {CHARACTERS.map(char => (
-                <CharacterOption key={char.file} onClick={() => setSelectedCharacter(char.file)}>
+                <CharacterOption key={char.file} onClick={() => { setSelectedCharacter(char.file); setMap(null); }}>
                   <CharacterImg src={`/${char.file}`} alt={char.name} />
                   <CharacterLabel>{char.name}</CharacterLabel>
                 </CharacterOption>
