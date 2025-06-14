@@ -28,7 +28,7 @@ const Instructions = styled.div`
 function App() {
   return (
     <AppContainer>
-      <Title>Flappy Bird</Title>
+      <Title>Farah Bird</Title>
       <Instructions>
         Click or press Space to make the bird jump. Avoid the pipes and try to get the highest score!
       </Instructions>
