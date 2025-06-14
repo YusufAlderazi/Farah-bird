@@ -714,10 +714,6 @@ const DubaiSkylineSVG = ({ style = {} }) => (
 );
 
 const FlappyBird = () => {
-  // Set credits to 200 on mount for localhost testing
-  useEffect(() => {
-    localStorage.setItem('credits', 200);
-  }, []);
   const [birdPosition, setBirdPosition] = useState(300);
   const [gameStarted, setGameStarted] = useState(false);
   const [gameOver, setGameOver] = useState(false);
